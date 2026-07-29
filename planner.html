@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner | Khareedo AI</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-bar">
+        <a class="brand" href="index.html">Khareedo AI</a>
+        <div class="nav-links">
+          <a href="planner.html" class="active">Meal Planner</a>
+          <a href="guide.html">Grocery Guide</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="container planner-grid">
+        <div class="planner-panel">
+          <p class="eyebrow">Build your week</p>
+          <h1>Turn your family’s favourites into one practical plan.</h1>
+          <p class="section-text">Choose a couple of meals for the week and see a refined shopping list appear for your kitchen.</p>
+
+          <form class="planner-form">
+            <label>
+              Families
+              <select>
+                <option>2 adults + 2 kids</option>
+                <option>2 adults</option>
+                <option>4 adults</option>
+              </select>
+            </label>
+            <label>
+              Budget
+              <select>
+                <option>Balanced</option>
+                <option>Economy</option>
+                <option>Comfort</option>
+              </select>
+            </label>
+            <label>
+              Preference
+              <select>
+                <option>Mixed Pakistani favourites</option>
+                <option>High protein</option>
+                <option>Vegetarian</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" type="button">Generate list</button>
+          </form>
+        </div>
+
+        <div class="result-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Suggested plan</p>
+            <h2>Weeknight menu</h2>
+          </div>
+          <div class="result-card">
+            <div class="result-row">
+              <span>Mon</span>
+              <strong>Chicken pulao + cucumber raita</strong>
+            </div>
+            <div class="result-row">
+              <span>Tue</span>
+              <strong>Daal, rice, and fried onions</strong>
+            </div>
+            <div class="result-row">
+              <span>Wed</span>
+              <strong>Seekh kebab wrap with mint chutney</strong>
+            </div>
+            <div class="result-row">
+              <span>Thu</span>
+              <strong>Shami kebab with naan</strong>
+            </div>
+            <div class="result-row">
+              <span>Fri</span>
+              <strong>Keema with peas and parathas</strong>
+            </div>
+          </div>
+          <div class="result-card compact">
+            <h3>Shopping summary</h3>
+            <ul>
+              <li>Rice, onions, tomatoes, ginger, garlic</li>
+              <li>Chicken, mince, yogurt, eggs</li>
+              <li>Atta, naan, potatoes, peas, spices</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
